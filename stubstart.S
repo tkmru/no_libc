@@ -2,6 +2,6 @@
 
 _start:
     call main
-    movl $1, %eax
-    xorl %ebx, %ebx
-    int $0x80
+    mov  $60, %eax # exit
+    xor  %rdi, %rdi   
+    syscall
